@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>BFCE61A9-4BF8-4B1D-94EA-074720806448</string>
+	<key>IDESourceControlProjectName</key>
+	<string>DJ App</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B0CC713C76C92FF2828DAC278FB86F3FE627DDD4</key>
+		<string>https://github.com/CS196-DJApp/iOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CS 196 DJ App/DJ App/DJ App.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B0CC713C76C92FF2828DAC278FB86F3FE627DDD4</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/CS196-DJApp/iOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B0CC713C76C92FF2828DAC278FB86F3FE627DDD4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B0CC713C76C92FF2828DAC278FB86F3FE627DDD4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>
