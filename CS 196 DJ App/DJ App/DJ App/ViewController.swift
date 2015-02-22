@@ -14,21 +14,25 @@ class ViewController: UIViewController, FBLoginViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.fbLoginView.delegate = self
+        self.fbLoginView.readPermissions = ["public_profile", "email", "user_friends"]
+
         // Do any additional setup after loading the view, typically from a nib.
         
 //        let loginView: FBLoginView = FBLoginView() 
 //        loginView.center = self.view.center
 //        self.view.addSubview(loginView)
-        self.performSegueWithIdentifier("BarsNearby", sender: self)
-        //let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        //let secondView =  storyboard.instantiateViewControllerWithIdentifier("Bars") as UIViewController
-        //self.presentViewController(secondView, animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func loginViewShowingLoggedInUser(loginView: FBLoginView!) {
+        self.performSegueWithIdentifier("BarsNearby", sender: self)
+    }
+    
 
 
 }
