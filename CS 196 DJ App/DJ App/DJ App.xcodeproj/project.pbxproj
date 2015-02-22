@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		941BC5E41A991C5E001A56C3 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941BC4C91A991C5E001A56C3 /* Bolts.framework */; };
-		941BC5E51A991C5E001A56C3 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941BC4CA1A991C5E001A56C3 /* FacebookSDK.framework */; };
-		941BC5E61A991C5E001A56C3 /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941BC4CB1A991C5E001A56C3 /* FBAudienceNetwork.framework */; };
-		941BC5E71A991C5E001A56C3 /* FBAudienceNetwork.README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 941BC4CC1A991C5E001A56C3 /* FBAudienceNetwork.README.txt */; };
-		941BC5E81A991C5E001A56C3 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 941BC4CD1A991C5E001A56C3 /* LICENSE */; };
-		941BC5E91A991C5E001A56C3 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 941BC4CE1A991C5E001A56C3 /* README.txt */; };
+		941BC7C31A998E82001A56C3 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941BC6A81A998E81001A56C3 /* Bolts.framework */; };
+		941BC7C41A998E82001A56C3 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941BC6A91A998E81001A56C3 /* FacebookSDK.framework */; };
+		941BC7C51A998E82001A56C3 /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941BC6AA1A998E81001A56C3 /* FBAudienceNetwork.framework */; };
+		941BC7C61A998E82001A56C3 /* FBAudienceNetwork.README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 941BC6AB1A998E81001A56C3 /* FBAudienceNetwork.README.txt */; };
+		941BC7C71A998E82001A56C3 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 941BC6AC1A998E81001A56C3 /* LICENSE */; };
+		941BC7C81A998E82001A56C3 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 941BC6AD1A998E81001A56C3 /* README.txt */; };
 		9449E7CE1A98514F0052FA72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9449E7CD1A98514F0052FA72 /* AppDelegate.swift */; };
 		9449E7D01A98514F0052FA72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9449E7CF1A98514F0052FA72 /* ViewController.swift */; };
 		9449E7D31A98514F0052FA72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9449E7D11A98514F0052FA72 /* Main.storyboard */; };
@@ -32,13 +32,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		941BC4C91A991C5E001A56C3 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		941BC4CA1A991C5E001A56C3 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
-		941BC4CB1A991C5E001A56C3 /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBAudienceNetwork.framework; sourceTree = "<group>"; };
-		941BC4CC1A991C5E001A56C3 /* FBAudienceNetwork.README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FBAudienceNetwork.README.txt; sourceTree = "<group>"; };
-		941BC4CD1A991C5E001A56C3 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		941BC4CE1A991C5E001A56C3 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		941BC6A61A9922D4001A56C3 /* DJ_App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DJ_App-Bridging-Header.h"; sourceTree = "<group>"; };
+		941BC6A81A998E81001A56C3 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		941BC6A91A998E81001A56C3 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		941BC6AA1A998E81001A56C3 /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBAudienceNetwork.framework; sourceTree = "<group>"; };
+		941BC6AB1A998E81001A56C3 /* FBAudienceNetwork.README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FBAudienceNetwork.README.txt; sourceTree = "<group>"; };
+		941BC6AC1A998E81001A56C3 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		941BC6AD1A998E81001A56C3 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		9449E7C81A98514E0052FA72 /* DJ App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DJ App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9449E7CC1A98514F0052FA72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9449E7CD1A98514F0052FA72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,9 +56,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				941BC5E61A991C5E001A56C3 /* FBAudienceNetwork.framework in Frameworks */,
-				941BC5E41A991C5E001A56C3 /* Bolts.framework in Frameworks */,
-				941BC5E51A991C5E001A56C3 /* FacebookSDK.framework in Frameworks */,
+				941BC7C51A998E82001A56C3 /* FBAudienceNetwork.framework in Frameworks */,
+				941BC7C31A998E82001A56C3 /* Bolts.framework in Frameworks */,
+				941BC7C41A998E82001A56C3 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,20 +75,20 @@
 		941BC4C71A991C0A001A56C3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				941BC4C81A991C5E001A56C3 /* FacebookSDK */,
+				941BC6A71A998E81001A56C3 /* FacebookSDK */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		941BC4C81A991C5E001A56C3 /* FacebookSDK */ = {
+		941BC6A71A998E81001A56C3 /* FacebookSDK */ = {
 			isa = PBXGroup;
 			children = (
-				941BC4C91A991C5E001A56C3 /* Bolts.framework */,
-				941BC4CA1A991C5E001A56C3 /* FacebookSDK.framework */,
-				941BC4CB1A991C5E001A56C3 /* FBAudienceNetwork.framework */,
-				941BC4CC1A991C5E001A56C3 /* FBAudienceNetwork.README.txt */,
-				941BC4CD1A991C5E001A56C3 /* LICENSE */,
-				941BC4CE1A991C5E001A56C3 /* README.txt */,
+				941BC6A81A998E81001A56C3 /* Bolts.framework */,
+				941BC6A91A998E81001A56C3 /* FacebookSDK.framework */,
+				941BC6AA1A998E81001A56C3 /* FBAudienceNetwork.framework */,
+				941BC6AB1A998E81001A56C3 /* FBAudienceNetwork.README.txt */,
+				941BC6AC1A998E81001A56C3 /* LICENSE */,
+				941BC6AD1A998E81001A56C3 /* README.txt */,
 			);
 			name = FacebookSDK;
 			path = ../../../../Documents/FacebookSDK;
@@ -235,10 +235,10 @@
 			files = (
 				9449E7D31A98514F0052FA72 /* Main.storyboard in Resources */,
 				9449E7D81A98514F0052FA72 /* LaunchScreen.xib in Resources */,
-				941BC5E71A991C5E001A56C3 /* FBAudienceNetwork.README.txt in Resources */,
+				941BC7C61A998E82001A56C3 /* FBAudienceNetwork.README.txt in Resources */,
 				9449E7D51A98514F0052FA72 /* Images.xcassets in Resources */,
-				941BC5E91A991C5E001A56C3 /* README.txt in Resources */,
-				941BC5E81A991C5E001A56C3 /* LICENSE in Resources */,
+				941BC7C81A998E82001A56C3 /* README.txt in Resources */,
+				941BC7C71A998E82001A56C3 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,7 +383,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
+					$SRCROOT/FacebookSDK.framework,
 					/Users/ryan/Documents/FacebookSDK,
 				);
 				GCC_INPUT_FILETYPE = automatic;
@@ -399,7 +399,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
+					$SRCROOT/FacebookSDK.framework,
 					/Users/ryan/Documents/FacebookSDK,
 				);
 				GCC_INPUT_FILETYPE = automatic;

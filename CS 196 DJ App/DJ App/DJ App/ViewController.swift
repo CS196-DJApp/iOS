@@ -8,16 +8,21 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, FBLoginViewDelegate {
 
+    @IBOutlet var fbLoginView : FBLoginView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let loginView: FBLoginView = FBLoginView()
-        loginView.center = self.view.center
-        self.view.addSubview(loginView)
-
-
+        
+//        let loginView: FBLoginView = FBLoginView() 
+//        loginView.center = self.view.center
+//        self.view.addSubview(loginView)
+        self.performSegueWithIdentifier("BarsNearby", sender: self)
+        //let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        //let secondView =  storyboard.instantiateViewControllerWithIdentifier("Bars") as UIViewController
+        //self.presentViewController(secondView, animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
