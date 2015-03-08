@@ -25,14 +25,14 @@
                     </view>
                     <connections>
                         <outlet property="fbLoginView" destination="Mre-GI-fF7" id="03y-jl-odL"/>
-                        <segue destination="zoX-8b-pdH" kind="modal" identifier="BarsNearby" id="uFS-XN-W3B"/>
+                        <segue destination="DZI-AH-iMb" kind="modal" identifier="BarsNearby" id="uFS-XN-W3B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="169.59999999999999" y="330.38666666666666"/>
         </scene>
-        <!--View Controller-->
+        <!--Bars Nearby-->
         <scene sceneID="4vN-2K-kYv">
             <objects>
                 <viewController storyboardIdentifier="Bars" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zoX-8b-pdH" sceneMemberID="viewController">
@@ -44,21 +44,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lag-Vt-w6D">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <items>
-                                    <navigationItem title="Bars Nearby" id="Z6H-qp-sG0"/>
-                                </items>
-                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68a-c6-KF2">
+                                <rect key="frame" x="126" y="64" width="44" height="30"/>
+                                <state key="normal" title="Kam's">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="AiB-If-do6" kind="push" id="ZW8-Lp-Wtw"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="PbM-9C-Mah">
+                                <rect key="frame" x="68" y="149" width="160" height="284"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Bars Nearby" id="opA-uo-jcf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cEI-Qa-3Pf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="526" y="330"/>
+            <point key="canvasLocation" x="1058" y="330"/>
         </scene>
-        <!--View Controller-->
+        <!--Main Menu-->
         <scene sceneID="Tfj-Ak-Xe7">
             <objects>
                 <viewController id="AiB-If-do6" sceneMemberID="viewController">
@@ -75,44 +83,145 @@
                                 <state key="normal" title="Special Requests">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="yhP-A4-NQq" kind="push" id="ZOm-sk-jrj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QvP-re-jcu">
                                 <rect key="frame" x="171" y="269" width="119" height="30"/>
                                 <state key="normal" title="Past / Future DJs">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Z5V-xZ-soJ" kind="push" id="Jd4-gH-FQc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="stV-ZC-hCb">
                                 <rect key="frame" x="16" y="269" width="136" height="30"/>
                                 <state key="normal" title="Order Drinks / Food">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="knX-ZO-qF7" kind="push" id="pC6-o4-Fn9"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Song" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YeB-Hs-lZh">
+                                <rect key="frame" x="109" y="72" width="103" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DW1-1W-ivv">
-                                <rect key="frame" x="37" y="227" width="82" height="30"/>
+                                <rect key="frame" x="43" y="227" width="82" height="30"/>
                                 <state key="normal" title="View Queue">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="IM2-4E-4YM" kind="push" id="4ql-Hs-amF"/>
+                                </connections>
                             </button>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qz1-9Q-0fU">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <items>
-                                    <navigationItem title="Main" id="y4c-Yp-p8p"/>
-                                </items>
-                            </navigationBar>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Current Song" translatesAutoresizingMaskIntoConstraints="NO" id="jKC-CF-6VI">
-                                <rect key="frame" x="107" y="44" width="107" height="37"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Main Menu" id="Dma-E7-9lg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PmF-2D-Cvg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="914" y="330"/>
+            <point key="canvasLocation" x="1446" y="330"/>
+        </scene>
+        <!--Queue-->
+        <scene sceneID="SGv-am-0jR">
+            <objects>
+                <viewController id="IM2-4E-4YM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NPl-HL-3hX"/>
+                        <viewControllerLayoutGuide type="bottom" id="6Eb-1w-nc6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pSm-Yk-lBG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Queue" id="VYh-Wa-wEy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UBj-vn-VaH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1843" y="330"/>
+        </scene>
+        <!--Order Drinks/Food-->
+        <scene sceneID="dxe-TE-otW">
+            <objects>
+                <viewController id="knX-ZO-qF7" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4dr-wF-22x"/>
+                        <viewControllerLayoutGuide type="bottom" id="QCu-EL-Ien"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GH5-ce-oOw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Order Drinks/Food" id="9Rh-cE-17D"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4VG-Q6-f7U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1843" y="962"/>
+        </scene>
+        <!--Past / Future DJs-->
+        <scene sceneID="RSw-4X-gg1">
+            <objects>
+                <viewController id="Z5V-xZ-soJ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QsU-oH-eOb"/>
+                        <viewControllerLayoutGuide type="bottom" id="ouq-nc-noe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EPg-AA-JeQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Past / Future DJs" id="2Vy-tG-fid"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JdC-om-PgH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1446" y="-296"/>
+        </scene>
+        <!--Special Requests-->
+        <scene sceneID="6VV-fF-bc5">
+            <objects>
+                <viewController id="yhP-A4-NQq" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="258-5U-vIT"/>
+                        <viewControllerLayoutGuide type="bottom" id="I9U-co-jo7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wh8-gy-jtV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Special Requests" id="6NJ-dL-9EM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ccS-08-yPB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1446" y="962"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tqB-oi-d16">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DZI-AH-iMb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BTV-Gw-iyf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zoX-8b-pdH" kind="relationship" relationship="rootViewController" id="2FM-VC-7fn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6xw-sa-4RX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="526" y="330"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
