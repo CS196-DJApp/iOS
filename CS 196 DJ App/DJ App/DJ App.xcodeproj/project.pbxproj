@@ -19,6 +19,7 @@
 		9449E7D51A98514F0052FA72 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9449E7D41A98514F0052FA72 /* Images.xcassets */; };
 		9449E7D81A98514F0052FA72 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9449E7D61A98514F0052FA72 /* LaunchScreen.xib */; };
 		9449E7E41A98514F0052FA72 /* DJ_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9449E7E31A98514F0052FA72 /* DJ_AppTests.swift */; };
+		945B488A1AACF39500FD6E08 /* BarsNearbyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945B48891AACF39500FD6E08 /* BarsNearbyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		9449E7DD1A98514F0052FA72 /* DJ AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DJ AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9449E7E21A98514F0052FA72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9449E7E31A98514F0052FA72 /* DJ_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJ_AppTests.swift; sourceTree = "<group>"; };
+		945B48891AACF39500FD6E08 /* BarsNearbyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BarsNearbyView.swift; path = ../BarsNearbyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 		9449E7CA1A98514E0052FA72 /* DJ App */ = {
 			isa = PBXGroup;
 			children = (
+				945B48891AACF39500FD6E08 /* BarsNearbyView.swift */,
 				9449E7CD1A98514F0052FA72 /* AppDelegate.swift */,
 				9449E7CF1A98514F0052FA72 /* ViewController.swift */,
 				9449E7D11A98514F0052FA72 /* Main.storyboard */,
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9449E7D01A98514F0052FA72 /* ViewController.swift in Sources */,
+				945B488A1AACF39500FD6E08 /* BarsNearbyView.swift in Sources */,
 				9449E7CE1A98514F0052FA72 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
