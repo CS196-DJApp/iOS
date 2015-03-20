@@ -15,6 +15,8 @@ class MainMenuView: UIViewController {
     @IBOutlet var order: UIButton!
     @IBOutlet var djs: UIButton!
     @IBOutlet var requestSong: UIButton!
+    @IBOutlet var currentSongLabel : UILabel!
+    var barSelected : String!
     
     override func viewDidLoad(){
         super.viewDidLoad()
@@ -53,6 +55,7 @@ class MainMenuView: UIViewController {
         self.requestSong.layer.cornerRadius = 10
         self.requestSong.clipsToBounds = true
 
+        currentSongLabel.text = barSelected
         
     }
     

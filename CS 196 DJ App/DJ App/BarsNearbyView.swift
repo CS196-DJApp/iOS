@@ -13,7 +13,7 @@ class BarsNearbyView: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet
     var tableView: UITableView!
     var items : [String]  = ["Kam's", "Murphy's", "Brothers", "Red Lion", "Firehaus"]
-
+    var barName : String!
     
     override func viewDidLoad(){
         super.viewDidLoad()
@@ -29,6 +29,14 @@ class BarsNearbyView: UIViewController, UITableViewDataSource, UITableViewDelega
         super.didReceiveMemoryWarning()
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject?) {
+        if (segue.identifier == "BarsNearby") {
+            var svc = segue!.destinationViewController as MainMenuView;
+            
+            svc.barSelected = barName
+            
+        }
+    }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.items.count;
@@ -45,6 +53,7 @@ class BarsNearbyView: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        barName = items[indexPath.row]
         self.performSegueWithIdentifier("BarsNearby", sender: self)
     }
     

@@ -146,8 +146,8 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bar Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dl-jc-GC0">
-                                <rect key="frame" x="150" y="110" width="64" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="150" y="110" width="79" height="22"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -162,6 +162,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Main Menu" id="Dma-E7-9lg"/>
                     <connections>
+                        <outlet property="currentSongLabel" destination="3dl-jc-GC0" id="Aw4-NG-wZp"/>
                         <outlet property="djs" destination="QvP-re-jcu" id="RB8-sb-kX5"/>
                         <outlet property="order" destination="stV-ZC-hCb" id="4Nw-Vy-Xbq"/>
                         <outlet property="requestSong" destination="AA0-bQ-HfY" id="58m-z1-2hz"/>
