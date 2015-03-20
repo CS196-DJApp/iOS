@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		941571A21ABB682500E6C49B /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941571A11ABB682500E6C49B /* MainMenuView.swift */; };
 		941BC7C31A998E82001A56C3 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941BC6A81A998E81001A56C3 /* Bolts.framework */; };
 		941BC7C41A998E82001A56C3 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941BC6A91A998E81001A56C3 /* FacebookSDK.framework */; };
 		941BC7C51A998E82001A56C3 /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941BC6AA1A998E81001A56C3 /* FBAudienceNetwork.framework */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		941571A11ABB682500E6C49B /* MainMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
 		941BC6A61A9922D4001A56C3 /* DJ_App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DJ_App-Bridging-Header.h"; sourceTree = "<group>"; };
 		941BC6A81A998E81001A56C3 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		941BC6A91A998E81001A56C3 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				9449E7CD1A98514F0052FA72 /* AppDelegate.swift */,
 				9449E7CF1A98514F0052FA72 /* ViewController.swift */,
 				9449E7D11A98514F0052FA72 /* Main.storyboard */,
+				941571A11ABB682500E6C49B /* MainMenuView.swift */,
 				9449E7D41A98514F0052FA72 /* Images.xcassets */,
 				9449E7D61A98514F0052FA72 /* LaunchScreen.xib */,
 				9449E7CB1A98514E0052FA72 /* Supporting Files */,
@@ -261,6 +264,7 @@
 			files = (
 				9449E7D01A98514F0052FA72 /* ViewController.swift in Sources */,
 				945B488A1AACF39500FD6E08 /* BarsNearbyView.swift in Sources */,
+				941571A21ABB682500E6C49B /* MainMenuView.swift in Sources */,
 				9449E7CE1A98514F0052FA72 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

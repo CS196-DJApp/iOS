@@ -10,6 +10,7 @@
 #define DJ_App_Bridging_Header_h
 
 #import <FacebookSDK/FacebookSDK.h>
-
+#import <CoreLocation/CoreLocation.h>
+#import <QuartzCore/QuartzCore.h>
 
 #endif
