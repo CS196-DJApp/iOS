@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9401B4021ABE37CB0057CA77 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9401B4011ABE37CB0057CA77 /* CoreLocation.framework */; };
 		941571A21ABB682500E6C49B /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941571A11ABB682500E6C49B /* MainMenuView.swift */; };
 		941BC7C31A998E82001A56C3 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941BC6A81A998E81001A56C3 /* Bolts.framework */; };
 		941BC7C41A998E82001A56C3 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941BC6A91A998E81001A56C3 /* FacebookSDK.framework */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9401B4011ABE37CB0057CA77 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		941571A11ABB682500E6C49B /* MainMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
 		941BC6A61A9922D4001A56C3 /* DJ_App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DJ_App-Bridging-Header.h"; sourceTree = "<group>"; };
 		941BC6A81A998E81001A56C3 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9401B4021ABE37CB0057CA77 /* CoreLocation.framework in Frameworks */,
 				941BC7C51A998E82001A56C3 /* FBAudienceNetwork.framework in Frameworks */,
 				941BC7C31A998E82001A56C3 /* Bolts.framework in Frameworks */,
 				941BC7C41A998E82001A56C3 /* FacebookSDK.framework in Frameworks */,
@@ -82,6 +85,7 @@
 		941BC4C71A991C0A001A56C3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9401B4011ABE37CB0057CA77 /* CoreLocation.framework */,
 				94FFB25F1ABC8EDF00216D96 /* Spotify.framework */,
 				941BC6A71A998E81001A56C3 /* FacebookSDK */,
 			);
