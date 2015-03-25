@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
@@ -112,17 +112,6 @@
                                     <segue destination="knX-ZO-qF7" kind="push" id="pC6-o4-Fn9"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DW1-1W-ivv">
-                                <rect key="frame" x="44" y="234" width="276" height="64"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="21"/>
-                                <state key="normal" title="View Queue">
-                                    <color key="titleColor" red="0.019607843137254902" green="0.81568627450980391" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="IM2-4E-4YM" kind="push" id="4ql-Hs-amF"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QvP-re-jcu">
                                 <rect key="frame" x="44" y="450" width="276" height="64"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="21"/>
@@ -157,6 +146,17 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DW1-1W-ivv">
+                                <rect key="frame" x="44" y="234" width="276" height="64"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="21"/>
+                                <state key="normal" title="View Queue">
+                                    <color key="titleColor" red="0.019607843137254902" green="0.81568627450980391" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="QAd-wD-xcJ" kind="push" id="QVl-9i-Y3x"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -175,23 +175,31 @@
             <point key="canvasLocation" x="1446" y="329"/>
         </scene>
         <!--Queue-->
-        <scene sceneID="SGv-am-0jR">
+        <scene sceneID="TeQ-PG-hCY">
             <objects>
-                <viewController id="IM2-4E-4YM" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="NPl-HL-3hX"/>
-                        <viewControllerLayoutGuide type="bottom" id="6Eb-1w-nc6"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="pSm-Yk-lBG">
+                <tableViewController storyboardIdentifier="QueueView" id="QAd-wD-xcJ" customClass="QueueView" customModule="DJ_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Cwp-66-SJm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Queue" id="VYh-Wa-wEy"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UBj-vn-VaH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="fAA-L0-1mr">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fAA-L0-1mr" id="SrU-5s-v8r">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="QAd-wD-xcJ" id="Gyu-eq-G2f"/>
+                            <outlet property="delegate" destination="QAd-wD-xcJ" id="Shd-eF-MEd"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Queue" id="sDn-rY-PL8"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cO7-ED-PKg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1843" y="329.99999999999994"/>
+            <point key="canvasLocation" x="1843" y="329"/>
         </scene>
         <!--Order Drinks/Food-->
         <scene sceneID="dxe-TE-otW">
