@@ -32,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A0839B31A9AA2A00050635D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		941BC6A61A9922D4001A56C3 /* DJ_App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DJ_App-Bridging-Header.h"; sourceTree = "<group>"; };
 		941BC6A81A998E81001A56C3 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		941BC6A91A998E81001A56C3 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
@@ -284,6 +285,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				9449E7D21A98514F0052FA72 /* Base */,
+				4A0839B31A9AA2A00050635D /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
