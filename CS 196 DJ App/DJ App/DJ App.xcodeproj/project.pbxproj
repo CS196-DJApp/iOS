@@ -22,6 +22,7 @@
 		9449E7E41A98514F0052FA72 /* DJ_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9449E7E31A98514F0052FA72 /* DJ_AppTests.swift */; };
 		945B488A1AACF39500FD6E08 /* BarsNearbyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945B48891AACF39500FD6E08 /* BarsNearbyView.swift */; };
 		948421B11ABFBB0D000E5285 /* QueueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948421B01ABFBB0D000E5285 /* QueueView.swift */; };
+		94AB95DC1AC6409400F49816 /* UnselectedUpvote.png in Resources */ = {isa = PBXBuildFile; fileRef = 94AB95DB1AC6409400F49816 /* UnselectedUpvote.png */; };
 		94FFB2601ABC8EDF00216D96 /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94FFB25F1ABC8EDF00216D96 /* Spotify.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		9449E7E31A98514F0052FA72 /* DJ_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJ_AppTests.swift; sourceTree = "<group>"; };
 		945B48891AACF39500FD6E08 /* BarsNearbyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BarsNearbyView.swift; path = ../BarsNearbyView.swift; sourceTree = "<group>"; };
 		948421B01ABFBB0D000E5285 /* QueueView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueView.swift; sourceTree = "<group>"; };
+		94AB95DB1AC6409400F49816 /* UnselectedUpvote.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = UnselectedUpvote.png; path = "../../../../../Pictures/DJ App/UnselectedUpvote.png"; sourceTree = "<group>"; };
 		94FFB25F1ABC8EDF00216D96 /* Spotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Spotify.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,6 +135,7 @@
 				948421B01ABFBB0D000E5285 /* QueueView.swift */,
 				9449E7D11A98514F0052FA72 /* Main.storyboard */,
 				9449E7D41A98514F0052FA72 /* Images.xcassets */,
+				94AB95DB1AC6409400F49816 /* UnselectedUpvote.png */,
 				9449E7D61A98514F0052FA72 /* LaunchScreen.xib */,
 				9449E7CB1A98514E0052FA72 /* Supporting Files */,
 				941BC6A61A9922D4001A56C3 /* DJ_App-Bridging-Header.h */,
@@ -250,6 +253,7 @@
 				9449E7D81A98514F0052FA72 /* LaunchScreen.xib in Resources */,
 				941BC7C61A998E82001A56C3 /* FBAudienceNetwork.README.txt in Resources */,
 				9449E7D51A98514F0052FA72 /* Images.xcassets in Resources */,
+				94AB95DC1AC6409400F49816 /* UnselectedUpvote.png in Resources */,
 				941BC7C81A998E82001A56C3 /* README.txt in Resources */,
 				941BC7C71A998E82001A56C3 /* LICENSE in Resources */,
 			);

@@ -59,6 +59,7 @@ class QueueView : UITableViewController, UITableViewDataSource, UITableViewDeleg
         cell.backgroundColor = UIColor.darkGrayColor()
         
         up.setTitle("Up", forState: UIControlState.Normal)
+        //up.setBackgroundImage(UIImage(named: "UnselectedUpvote.png"), forState: UIControlState.Normal)
         down.setTitle("Down", forState: UIControlState.Normal)
         up.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
         down.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
