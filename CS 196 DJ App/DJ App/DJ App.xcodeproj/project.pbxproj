@@ -20,6 +20,7 @@
 		9449E7D51A98514F0052FA72 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9449E7D41A98514F0052FA72 /* Images.xcassets */; };
 		9449E7D81A98514F0052FA72 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9449E7D61A98514F0052FA72 /* LaunchScreen.xib */; };
 		9449E7E41A98514F0052FA72 /* DJ_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9449E7E31A98514F0052FA72 /* DJ_AppTests.swift */; };
+		944ADF381AD1D72000FDC93B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 944ADF371AD1D72000FDC93B /* CoreLocation.framework */; };
 		945B488A1AACF39500FD6E08 /* BarsNearbyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945B48891AACF39500FD6E08 /* BarsNearbyView.swift */; };
 		948421B11ABFBB0D000E5285 /* QueueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948421B01ABFBB0D000E5285 /* QueueView.swift */; };
 		94AB95DC1AC6409400F49816 /* UnselectedUpvote.png in Resources */ = {isa = PBXBuildFile; fileRef = 94AB95DB1AC6409400F49816 /* UnselectedUpvote.png */; };
@@ -55,6 +56,7 @@
 		9449E7DD1A98514F0052FA72 /* DJ AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DJ AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9449E7E21A98514F0052FA72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9449E7E31A98514F0052FA72 /* DJ_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJ_AppTests.swift; sourceTree = "<group>"; };
+		944ADF371AD1D72000FDC93B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		945B48891AACF39500FD6E08 /* BarsNearbyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BarsNearbyView.swift; path = ../BarsNearbyView.swift; sourceTree = "<group>"; };
 		948421B01ABFBB0D000E5285 /* QueueView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueView.swift; sourceTree = "<group>"; };
 		94AB95DB1AC6409400F49816 /* UnselectedUpvote.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = UnselectedUpvote.png; path = "../../../../../Pictures/DJ App/UnselectedUpvote.png"; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				944ADF381AD1D72000FDC93B /* CoreLocation.framework in Frameworks */,
 				941BC7C51A998E82001A56C3 /* FBAudienceNetwork.framework in Frameworks */,
 				941BC7C31A998E82001A56C3 /* Bolts.framework in Frameworks */,
 				941BC7C41A998E82001A56C3 /* FacebookSDK.framework in Frameworks */,
@@ -86,6 +89,7 @@
 		941BC4C71A991C0A001A56C3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				944ADF371AD1D72000FDC93B /* CoreLocation.framework */,
 				94FFB25F1ABC8EDF00216D96 /* Spotify.framework */,
 				941BC6A71A998E81001A56C3 /* FacebookSDK */,
 			);
