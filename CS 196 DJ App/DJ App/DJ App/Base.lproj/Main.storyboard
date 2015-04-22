@@ -16,15 +16,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mre-GI-fF7" customClass="FBLoginView">
-                                <rect key="frame" x="109" y="275" width="200" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blurred-circles.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="PHo-sA-YqH">
+                                <rect key="frame" x="0.0" y="-31" width="594" height="617"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="fbLoginView" destination="Mre-GI-fF7" id="03y-jl-odL"/>
                         <segue destination="zoX-8b-pdH" kind="show" identifier="BarsNearby" id="uFS-XN-W3B"/>
                     </connections>
                 </viewController>
@@ -44,6 +42,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blurred-circles.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="nxS-px-hOy">
+                                <rect key="frame" x="-8" y="0.0" width="608" height="630"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHh-cG-odb">
                                 <rect key="frame" x="229" y="6" width="323" height="86"/>
                                 <attributedString key="attributedText">
@@ -158,11 +160,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <searchBar key="tableFooterView" contentMode="redraw" id="ESg-VT-iSe">
-                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </searchBar>
+                        <imageView key="tableFooterView" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blurred-lights2.jpg" id="Y34-45-35g">
+                            <rect key="frame" x="0.0" y="283" width="600" height="276"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="113" id="n07-Ae-cnR">
                                 <autoresizingMask key="autoresizingMask"/>
@@ -199,7 +200,7 @@
                                             </connections>
                                         </button>
                                         <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6VN-ln-VKC">
-                                            <rect key="frame" x="-41" y="0.0" width="633" height="44"/>
+                                            <rect key="frame" x="-41" y="0.0" width="649" height="44"/>
                                             <color key="barTintColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                             <textAttributes key="titleTextAttributes">
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
@@ -388,8 +389,12 @@
             <point key="canvasLocation" x="2500" y="404"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="blurred-circles.jpeg" width="2880" height="1920"/>
+        <image name="blurred-lights2.jpg" width="1024" height="768"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="lDw-i7-RNg"/>
+        <segue reference="yYs-Rf-3kg"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.30090884820000002" green="0.65668144579999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>
