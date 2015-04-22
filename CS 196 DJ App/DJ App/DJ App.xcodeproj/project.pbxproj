@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7461A7EF1AE73D7900790AF5 /* blurred-circles.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7461A7EE1AE73D7900790AF5 /* blurred-circles.jpeg */; };
-		7461A7F11AE73FA500790AF5 /* blurred-lights2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7461A7F01AE73FA500790AF5 /* blurred-lights2.jpg */; };
+		7461A7F31AE7410900790AF5 /* light2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7461A7F21AE7410900790AF5 /* light2.jpg */; };
 		7485D5B91A9A7AE400F38567 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7485D5B81A9A7AE400F38567 /* Bolts.framework */; };
 		7485D5BB1A9A7AEA00F38567 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7485D5BA1A9A7AEA00F38567 /* FacebookSDK.framework */; };
 		7485D5BD1A9A7AEF00F38567 /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7485D5BC1A9A7AEF00F38567 /* FBAudienceNetwork.framework */; };
@@ -35,7 +35,7 @@
 
 /* Begin PBXFileReference section */
 		7461A7EE1AE73D7900790AF5 /* blurred-circles.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "blurred-circles.jpeg"; sourceTree = "<group>"; };
-		7461A7F01AE73FA500790AF5 /* blurred-lights2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "blurred-lights2.jpg"; sourceTree = "<group>"; };
+		7461A7F21AE7410900790AF5 /* light2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = light2.jpg; sourceTree = "<group>"; };
 		7485D5B81A9A7AE400F38567 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		7485D5BA1A9A7AEA00F38567 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		7485D5BC1A9A7AEF00F38567 /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBAudienceNetwork.framework; sourceTree = "<group>"; };
@@ -120,7 +120,7 @@
 		9449E7CA1A98514E0052FA72 /* DJ App */ = {
 			isa = PBXGroup;
 			children = (
-				7461A7F01AE73FA500790AF5 /* blurred-lights2.jpg */,
+				7461A7F21AE7410900790AF5 /* light2.jpg */,
 				7461A7EE1AE73D7900790AF5 /* blurred-circles.jpeg */,
 				9449E7CD1A98514F0052FA72 /* AppDelegate.swift */,
 				9449E7CF1A98514F0052FA72 /* ViewController.swift */,
@@ -239,11 +239,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7461A7F31AE7410900790AF5 /* light2.jpg in Resources */,
 				9449E7D31A98514F0052FA72 /* Main.storyboard in Resources */,
 				9449E7D81A98514F0052FA72 /* LaunchScreen.xib in Resources */,
 				7485D5C11A9A7AFC00F38567 /* FBAudienceNetwork.README.txt in Resources */,
 				9449E7D51A98514F0052FA72 /* Images.xcassets in Resources */,
-				7461A7F11AE73FA500790AF5 /* blurred-lights2.jpg in Resources */,
 				7485D5C31A9A7AFC00F38567 /* README.txt in Resources */,
 				7485D5C21A9A7AFC00F38567 /* LICENSE in Resources */,
 				7461A7EF1AE73D7900790AF5 /* blurred-circles.jpeg in Resources */,

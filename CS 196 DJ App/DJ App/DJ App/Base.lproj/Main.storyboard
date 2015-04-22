@@ -7,7 +7,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="Main" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="DJ_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Main" wantsFullScreenLayout="YES" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="DJ_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -17,8 +17,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blurred-circles.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="PHo-sA-YqH">
-                                <rect key="frame" x="0.0" y="-31" width="594" height="617"/>
+                                <rect key="frame" x="-17" y="-31" width="634" height="640"/>
                             </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bzn-QD-7dW">
+                                <rect key="frame" x="-9" y="-31" width="648" height="654"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="m3S-jS-Uka">
+                                    <rect key="frame" x="0.0" y="0.0" width="648" height="654"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -33,7 +42,7 @@
         <!--View Controller-->
         <scene sceneID="4vN-2K-kYv">
             <objects>
-                <viewController storyboardIdentifier="Bars" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zoX-8b-pdH" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Bars" wantsFullScreenLayout="YES" extendedLayoutIncludesOpaqueBars="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zoX-8b-pdH" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ofo-Fg-w5C"/>
                         <viewControllerLayoutGuide type="bottom" id="Fwg-Zj-vZp"/>
@@ -160,7 +169,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <imageView key="tableFooterView" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blurred-lights2.jpg" id="Y34-45-35g">
+                        <imageView key="tableFooterView" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="light2.jpg" id="Y34-45-35g">
                             <rect key="frame" x="0.0" y="283" width="600" height="276"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
@@ -275,6 +284,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="separatorColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <searchBar key="tableHeaderView" contentMode="redraw" text="" id="pZy-m2-Of2">
                             <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -391,7 +401,7 @@
     </scenes>
     <resources>
         <image name="blurred-circles.jpeg" width="2880" height="1920"/>
-        <image name="blurred-lights2.jpg" width="1024" height="768"/>
+        <image name="light2.jpg" width="1920" height="1080"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="yYs-Rf-3kg"/>
