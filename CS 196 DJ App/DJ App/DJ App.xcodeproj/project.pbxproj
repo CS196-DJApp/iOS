@@ -25,6 +25,8 @@
 		945B488A1AACF39500FD6E08 /* BarsNearbyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945B48891AACF39500FD6E08 /* BarsNearbyView.swift */; };
 		948421B11ABFBB0D000E5285 /* QueueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948421B01ABFBB0D000E5285 /* QueueView.swift */; };
 		948ABD6B1AED813E007C6E71 /* abstract-blurred-lines-colorful-370.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 948ABD6A1AED813E007C6E71 /* abstract-blurred-lines-colorful-370.jpeg */; };
+		948ABD6D1AED9D23007C6E71 /* SongRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948ABD6C1AED9D23007C6E71 /* SongRequestView.swift */; };
+		948ABD6F1AEDA88F007C6E71 /* resized-blurred-lines.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 948ABD6E1AEDA88F007C6E71 /* resized-blurred-lines.jpeg */; };
 		94FFB2601ABC8EDF00216D96 /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94FFB25F1ABC8EDF00216D96 /* Spotify.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +64,8 @@
 		945B48891AACF39500FD6E08 /* BarsNearbyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BarsNearbyView.swift; path = ../BarsNearbyView.swift; sourceTree = "<group>"; };
 		948421B01ABFBB0D000E5285 /* QueueView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueView.swift; sourceTree = "<group>"; };
 		948ABD6A1AED813E007C6E71 /* abstract-blurred-lines-colorful-370.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "abstract-blurred-lines-colorful-370.jpeg"; sourceTree = "<group>"; };
+		948ABD6C1AED9D23007C6E71 /* SongRequestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongRequestView.swift; sourceTree = "<group>"; };
+		948ABD6E1AEDA88F007C6E71 /* resized-blurred-lines.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "resized-blurred-lines.jpeg"; sourceTree = "<group>"; };
 		94FFB25F1ABC8EDF00216D96 /* Spotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Spotify.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -140,9 +144,11 @@
 				941571A11ABB682500E6C49B /* MainMenuView.swift */,
 				948421B01ABFBB0D000E5285 /* QueueView.swift */,
 				9449E7D11A98514F0052FA72 /* Main.storyboard */,
+				948ABD6C1AED9D23007C6E71 /* SongRequestView.swift */,
 				9449E7D41A98514F0052FA72 /* Images.xcassets */,
 				948ABD6A1AED813E007C6E71 /* abstract-blurred-lines-colorful-370.jpeg */,
 				944ADF391AD1EFF300FDC93B /* UnselectedUpvote.png */,
+				948ABD6E1AEDA88F007C6E71 /* resized-blurred-lines.jpeg */,
 				9449E7D61A98514F0052FA72 /* LaunchScreen.xib */,
 				9449E7CB1A98514E0052FA72 /* Supporting Files */,
 				941BC6A61A9922D4001A56C3 /* DJ_App-Bridging-Header.h */,
@@ -261,6 +267,7 @@
 				941BC7C61A998E82001A56C3 /* FBAudienceNetwork.README.txt in Resources */,
 				9449E7D51A98514F0052FA72 /* Images.xcassets in Resources */,
 				941BC7C81A998E82001A56C3 /* README.txt in Resources */,
+				948ABD6F1AEDA88F007C6E71 /* resized-blurred-lines.jpeg in Resources */,
 				944ADF3A1AD1EFF300FDC93B /* UnselectedUpvote.png in Resources */,
 				941BC7C71A998E82001A56C3 /* LICENSE in Resources */,
 				948ABD6B1AED813E007C6E71 /* abstract-blurred-lines-colorful-370.jpeg in Resources */,
@@ -282,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9449E7D01A98514F0052FA72 /* ViewController.swift in Sources */,
+				948ABD6D1AED9D23007C6E71 /* SongRequestView.swift in Sources */,
 				945B488A1AACF39500FD6E08 /* BarsNearbyView.swift in Sources */,
 				941571A21ABB682500E6C49B /* MainMenuView.swift in Sources */,
 				948421B11ABFBB0D000E5285 /* QueueView.swift in Sources */,

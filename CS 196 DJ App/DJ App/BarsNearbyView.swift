@@ -32,7 +32,7 @@ class BarsNearbyView: UIViewController, UITableViewDataSource, UITableViewDelega
     
     override func viewDidLoad(){
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "abstract-blurred-lines-colorful-370.jpeg")!)
+        //self.view.backgroundColor = UIColor(patternImage: UIImage(named: "abstract-blurred-lines-colorful-370.jpeg")!)
 
         self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
         self.tableView.backgroundColor = UIColor.clearColor()

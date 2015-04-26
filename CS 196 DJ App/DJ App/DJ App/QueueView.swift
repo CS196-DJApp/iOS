@@ -14,6 +14,9 @@ class QueueView : UITableViewController, UITableViewDataSource, UITableViewDeleg
     var down = UIButton()
     var songs = ["Darude - Sandstorm", "Avicii - Levels", "Black Eyed Peas - I Gotta Feeling", "Taio Cruz - Dynamite" ]
     
+    @IBOutlet var addSong: UIButton!
+    
+    
     func refresh(sender: AnyObject){
         
         self.tableView.reloadData()
