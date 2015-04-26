@@ -16,7 +16,7 @@ class ViewController: UIViewController, FBLoginViewDelegate {
         super.viewDidLoad()
         self.fbLoginView.delegate = self
         self.fbLoginView.readPermissions = ["public_profile", "email", "user_friends"]
-
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "abstract-blurred-lines-colorful-370.jpeg")!)
         // Do any additional setup after loading the view, typically from a nib.
         
 //        let loginView: FBLoginView = FBLoginView() 

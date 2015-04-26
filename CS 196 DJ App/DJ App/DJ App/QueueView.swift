@@ -16,29 +16,32 @@ class QueueView : UITableViewController, UITableViewDataSource, UITableViewDeleg
     
     func refresh(sender: AnyObject){
         
-        tableView.reloadData()
+        self.tableView.reloadData()
         
         //These 3 lines set text and color for the refresh animation. Last line has refresh animation last for one second (just to
         // see what text looks like for the time being).
         var attributes = NSDictionary(object: UIColor.whiteColor(), forKey: NSForegroundColorAttributeName)
         self.refreshControl?.attributedTitle = NSAttributedString(string: "Refreshing...", attributes: attributes)
-        NSThread.sleepForTimeInterval(1.0)
+        NSThread.sleepForTimeInterval(1.0) //show the animation for one second
         
         self.refreshControl?.endRefreshing()
     }
     
     override func viewDidLoad(){
-        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        tableView.backgroundColor = UIColor.darkGrayColor()
-        tableView.tableFooterView = UIView(frame: CGRectZero)
+        
+        self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        self.tableView.backgroundColor = UIColor.clearColor()
+        self.tableView.tableFooterView = UIView(frame: CGRectZero)
         
         //Instantiates refresh control object and setts color to be same color as table
         self.refreshControl = UIRefreshControl()
-        self.refreshControl?.backgroundColor = UIColor.darkGrayColor()
+        self.refreshControl?.backgroundColor = UIColor.clearColor()
         self.refreshControl?.tintColor = UIColor.whiteColor()
-        
         self.refreshControl?.addTarget(self, action: "refresh:", forControlEvents: UIControlEvents.ValueChanged)
         
+        
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "abstract-blurred-lines-colorful-370.jpeg")!)
+
         tableView.addSubview(self.refreshControl!)
         
         super.viewDidLoad()
@@ -56,10 +59,10 @@ class QueueView : UITableViewController, UITableViewDataSource, UITableViewDeleg
         var cell : UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("cell") as UITableViewCell
         cell.textLabel?.text = self.songs[indexPath.row]
         cell.textLabel?.textColor = UIColor.whiteColor()
-        cell.backgroundColor = UIColor.darkGrayColor()
+        cell.backgroundColor = UIColor.clearColor()
         
-        up.setTitle("Up", forState: UIControlState.Normal)
-        //up.setBackgroundImage(UIImage(named: "UnselectedUpvote.png"), forState: UIControlState.Normal)
+        //up.setTitle("Up", forState: UIControlState.Normal)
+        up.setImage(UIImage(named: "UnselectedUpvote.png"), forState: UIControlState.Normal)
         down.setTitle("Down", forState: UIControlState.Normal)
         up.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
         down.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)

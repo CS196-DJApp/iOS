@@ -21,9 +21,10 @@
 		9449E7D81A98514F0052FA72 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9449E7D61A98514F0052FA72 /* LaunchScreen.xib */; };
 		9449E7E41A98514F0052FA72 /* DJ_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9449E7E31A98514F0052FA72 /* DJ_AppTests.swift */; };
 		944ADF381AD1D72000FDC93B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 944ADF371AD1D72000FDC93B /* CoreLocation.framework */; };
+		944ADF3A1AD1EFF300FDC93B /* UnselectedUpvote.png in Resources */ = {isa = PBXBuildFile; fileRef = 944ADF391AD1EFF300FDC93B /* UnselectedUpvote.png */; };
 		945B488A1AACF39500FD6E08 /* BarsNearbyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945B48891AACF39500FD6E08 /* BarsNearbyView.swift */; };
 		948421B11ABFBB0D000E5285 /* QueueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948421B01ABFBB0D000E5285 /* QueueView.swift */; };
-		94AB95DC1AC6409400F49816 /* UnselectedUpvote.png in Resources */ = {isa = PBXBuildFile; fileRef = 94AB95DB1AC6409400F49816 /* UnselectedUpvote.png */; };
+		948ABD6B1AED813E007C6E71 /* abstract-blurred-lines-colorful-370.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 948ABD6A1AED813E007C6E71 /* abstract-blurred-lines-colorful-370.jpeg */; };
 		94FFB2601ABC8EDF00216D96 /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94FFB25F1ABC8EDF00216D96 /* Spotify.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,9 +58,10 @@
 		9449E7E21A98514F0052FA72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9449E7E31A98514F0052FA72 /* DJ_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJ_AppTests.swift; sourceTree = "<group>"; };
 		944ADF371AD1D72000FDC93B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		944ADF391AD1EFF300FDC93B /* UnselectedUpvote.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = UnselectedUpvote.png; path = "../../../../../Pictures/DJ App/UnselectedUpvote.png"; sourceTree = "<group>"; };
 		945B48891AACF39500FD6E08 /* BarsNearbyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BarsNearbyView.swift; path = ../BarsNearbyView.swift; sourceTree = "<group>"; };
 		948421B01ABFBB0D000E5285 /* QueueView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueView.swift; sourceTree = "<group>"; };
-		94AB95DB1AC6409400F49816 /* UnselectedUpvote.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = UnselectedUpvote.png; path = "../../../../../Pictures/DJ App/UnselectedUpvote.png"; sourceTree = "<group>"; };
+		948ABD6A1AED813E007C6E71 /* abstract-blurred-lines-colorful-370.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "abstract-blurred-lines-colorful-370.jpeg"; sourceTree = "<group>"; };
 		94FFB25F1ABC8EDF00216D96 /* Spotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Spotify.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,7 +141,8 @@
 				948421B01ABFBB0D000E5285 /* QueueView.swift */,
 				9449E7D11A98514F0052FA72 /* Main.storyboard */,
 				9449E7D41A98514F0052FA72 /* Images.xcassets */,
-				94AB95DB1AC6409400F49816 /* UnselectedUpvote.png */,
+				948ABD6A1AED813E007C6E71 /* abstract-blurred-lines-colorful-370.jpeg */,
+				944ADF391AD1EFF300FDC93B /* UnselectedUpvote.png */,
 				9449E7D61A98514F0052FA72 /* LaunchScreen.xib */,
 				9449E7CB1A98514E0052FA72 /* Supporting Files */,
 				941BC6A61A9922D4001A56C3 /* DJ_App-Bridging-Header.h */,
@@ -257,9 +260,10 @@
 				9449E7D81A98514F0052FA72 /* LaunchScreen.xib in Resources */,
 				941BC7C61A998E82001A56C3 /* FBAudienceNetwork.README.txt in Resources */,
 				9449E7D51A98514F0052FA72 /* Images.xcassets in Resources */,
-				94AB95DC1AC6409400F49816 /* UnselectedUpvote.png in Resources */,
 				941BC7C81A998E82001A56C3 /* README.txt in Resources */,
+				944ADF3A1AD1EFF300FDC93B /* UnselectedUpvote.png in Resources */,
 				941BC7C71A998E82001A56C3 /* LICENSE in Resources */,
+				948ABD6B1AED813E007C6E71 /* abstract-blurred-lines-colorful-370.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

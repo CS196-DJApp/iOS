@@ -32,8 +32,10 @@ class BarsNearbyView: UIViewController, UITableViewDataSource, UITableViewDelega
     
     override func viewDidLoad(){
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "abstract-blurred-lines-colorful-370.jpeg")!)
+
         self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        self.tableView.backgroundColor = UIColor.darkGrayColor()
+        self.tableView.backgroundColor = UIColor.clearColor()
         self.tableView.tableFooterView = UIView(frame: CGRectZero)
         
         locationManager = CLLocationManager()
@@ -108,7 +110,8 @@ class BarsNearbyView: UIViewController, UITableViewDataSource, UITableViewDelega
         distanceIndicator[indexPath.row].textColor = UIColor(red: 5.0/255.0, green: 208.0/255.0, blue: 255.0/255.0, alpha: 1.0)
         //cell.textLabel?.textAlignment = NSTextAlignment.Center
         cell.textLabel?.font = UIFont.boldSystemFontOfSize(18.0)
-        cell.backgroundColor = UIColor.darkGrayColor()
+        //cell.backgroundColor = UIColor.darkGrayColor()
+        cell.backgroundColor = UIColor.clearColor()
         cell.textLabel?.textColor = UIColor(red: 5.0/255.0, green: 208.0/255.0, blue: 255.0/255.0, alpha: 1.0)
         
         return cell
