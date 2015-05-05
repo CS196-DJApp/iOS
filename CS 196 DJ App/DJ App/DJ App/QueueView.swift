@@ -13,7 +13,8 @@ class QueueView : UITableViewController, UITableViewDataSource, UITableViewDeleg
     var up  = UIButton()
     var down = UIButton()
     var songs = ["Darude - Sandstorm", "Avicii - Levels", "Black Eyed Peas - I Gotta Feeling", "Taio Cruz - Dynamite" ]
-    
+    var requestedSongName : String!
+    var requestedArtistName : String!
     @IBOutlet var addSong: UIButton!
     
     
@@ -31,6 +32,12 @@ class QueueView : UITableViewController, UITableViewDataSource, UITableViewDeleg
     }
     
     override func viewDidLoad(){
+        if (requestedSongName != nil && requestedArtistName != nil){
+            songs.append(requestedArtistName + "-" + requestedSongName)
+
+        }
+        println(requestedSongName)
+        println(requestedArtistName)
         
         self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
         self.tableView.backgroundColor = UIColor.clearColor()
@@ -60,20 +67,25 @@ class QueueView : UITableViewController, UITableViewDataSource, UITableViewDeleg
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell : UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("cell") as UITableViewCell
-        cell.textLabel?.text = self.songs[indexPath.row]
-        cell.textLabel?.textColor = UIColor.whiteColor()
-        cell.backgroundColor = UIColor.clearColor()
+
         
-        //up.setTitle("Up", forState: UIControlState.Normal)
-        up.setImage(UIImage(named: "UnselectedUpvote.png"), forState: UIControlState.Normal)
+        up.setTitle("Up", forState: UIControlState.Normal)
         down.setTitle("Down", forState: UIControlState.Normal)
         up.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
         down.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
-        up.frame = CGRectMake(200.0, 5.0, 75.0, 30.0)
-        down.frame = CGRectMake(250.0, 5.0, 75.0, 30.0)
+        up.frame = CGRectMake(200.0, 5, 75.0, 30.0)
         
-        cell.contentView.addSubview(up)
-        cell.contentView.addSubview(down)
+        down.frame = CGRectMake(250.0, 5, 75.0, 30.0)
+        
+        up.tag = indexPath.row
+        down.tag = indexPath.row
+        
+        cell.addSubview(up)
+        cell.addSubview(down)
+
+        cell.textLabel?.text = self.songs[indexPath.row]
+        cell.textLabel?.textColor = UIColor.whiteColor()
+        cell.backgroundColor = UIColor.clearColor()
         return cell
     }
     

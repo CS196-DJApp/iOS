@@ -8,18 +8,44 @@
 import UIKit
 class SongRequestView : UIViewController, UITextFieldDelegate, UITextViewDelegate {
     
-    @IBOutlet var requestField: UITextField!
-    var song : String!
+    @IBOutlet var artistField: UITextField!
+    @IBOutlet var requestButton: UIButton!
+    @IBOutlet var nameField: UITextField!
+    @IBOutlet var view1: UIView!
+    
+
+    var songName : String!
+    var artistName : String!
+    
     override func viewDidLoad(){
         super.viewDidLoad()
+        self.view1.backgroundColor = UIColor(patternImage: UIImage(named: "abstract-blurred-lines-colorful-370.jpeg")!)
+        requestButton.layer.cornerRadius = 5;
+        requestButton.layer.borderWidth = 0;
         
     }
     
     func textFieldDidEndEditing(textField : UITextField){
-        song = textField.text
-        println(song)
+
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject?) {
+        if (segue.identifier == "toQueue") {
+            var svc = segue!.destinationViewController as QueueView
+            var svc2 = segue!.destinationViewController as QueueView
+            
+            svc.requestedSongName = songName
+            svc2.requestedArtistName = artistName
+        }
+    }
+    
+    @IBAction func handleButtonClick(sender: AnyObject) {
+        if (!nameField.text.isEmpty && !artistField.text.isEmpty){
+            songName = nameField.text
+            artistName = artistField.text
+            self.performSegueWithIdentifier("toQueue", sender: self)
+        }
+    }
     //@dynamic overlayButton
     
     //func

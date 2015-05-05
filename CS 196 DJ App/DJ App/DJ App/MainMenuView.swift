@@ -20,7 +20,7 @@ class MainMenuView: UIViewController {
     
     override func viewDidLoad(){
         super.viewDidLoad()
-        //self.view.backgroundColor = UIColor(patternImage: UIImage(named: "abstract-blurred-lines-colorful-370.jpeg")!)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "abstract-blurred-lines-colorful-370.jpeg")!)
         
         self.viewQueue.layer.borderWidth = 2.0
         self.viewQueue.layer.borderColor = UIColor(red: 127, green: 127, blue: 127, alpha: 0.5).CGColor
