@@ -12,11 +12,10 @@ import UIKit
 class QueueView : UITableViewController, UITableViewDataSource, UITableViewDelegate {
     var up  = UIButton()
     var down = UIButton()
-    var songs = ["Darude - Sandstorm", "Avicii - Levels", "Black Eyed Peas - I Gotta Feeling", "Taio Cruz - Dynamite" ]
+    var songs = ["Darude - Sandstorm", "Avicii - Levels", "Black Eyed Peas - I Gotta Feeling", "Taio Cruz - Dynamite"]
     var requestedSongName : String!
     var requestedArtistName : String!
     @IBOutlet var addSong: UIButton!
-    
     
     func refresh(sender: AnyObject){
         
@@ -32,9 +31,9 @@ class QueueView : UITableViewController, UITableViewDataSource, UITableViewDeleg
     }
     
     override func viewDidLoad(){
+        super.viewDidLoad()
         if (requestedSongName != nil && requestedArtistName != nil){
             songs.append(requestedArtistName + "-" + requestedSongName)
-
         }
         println(requestedSongName)
         println(requestedArtistName)
@@ -54,7 +53,6 @@ class QueueView : UITableViewController, UITableViewDataSource, UITableViewDeleg
 
         tableView.addSubview(self.refreshControl!)
         
-        super.viewDidLoad()
     }
     
     override func didReceiveMemoryWarning() {
@@ -66,9 +64,10 @@ class QueueView : UITableViewController, UITableViewDataSource, UITableViewDeleg
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell : UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("cell") as UITableViewCell
+        let cell : UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("cell") as TableViewCell
 
         
+
         up.setTitle("Up", forState: UIControlState.Normal)
         down.setTitle("Down", forState: UIControlState.Normal)
         up.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
@@ -84,6 +83,7 @@ class QueueView : UITableViewController, UITableViewDataSource, UITableViewDeleg
         cell.addSubview(down)
 
         cell.textLabel?.text = self.songs[indexPath.row]
+
         cell.textLabel?.textColor = UIColor.whiteColor()
         cell.backgroundColor = UIColor.clearColor()
         return cell

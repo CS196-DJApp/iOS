@@ -31,8 +31,8 @@ class SongRequestView : UIViewController, UITextFieldDelegate, UITextViewDelegat
     
     override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject?) {
         if (segue.identifier == "toQueue") {
-            var svc = segue!.destinationViewController as QueueView
-            var svc2 = segue!.destinationViewController as QueueView
+            var svc = segue!.destinationViewController as QueueView2
+            var svc2 = segue!.destinationViewController as QueueView2
             
             svc.requestedSongName = songName
             svc2.requestedArtistName = artistName
