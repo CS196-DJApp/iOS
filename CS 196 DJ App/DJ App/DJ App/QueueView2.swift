@@ -28,10 +28,7 @@ class QueueView2 : UIViewController, UITableViewDataSource, UITableViewDelegate 
         
         self.tableView.backgroundColor = UIColor(patternImage: UIImage(named: "abstract-blurred-lines-colorful-370.jpeg")!)
         
-        if (viewLoadedOnce == false){
-            songs.append("Rick Astley - Never Gonna Give You Up")
-            viewLoadedOnce = true
-        }
+        songs.append("Rick Astley - Never Gonna Give You Up")
         
         self.tableView.reloadData()
     }
